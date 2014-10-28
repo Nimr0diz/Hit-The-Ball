@@ -1,0 +1,192 @@
+/*### PC and Mac ###*/
+@media (min-width:1025px) 
+{
+	#cont
+	{
+		left: 50%;
+		width:640px;
+		height:640px;
+	}
+
+	.Titles 
+	{
+	width: 640px;
+	}
+	
+	#time-score
+	{
+		position: absolute;
+	}
+	
+	/*## Score Titles ##*/
+	#scoreTitles
+	{
+		margin-top: 170px;
+	}
+
+	#scoreTitles h1 
+	{
+		font-size: 64px;
+	}
+
+	#scoreTitles h2
+	{
+		margin-top: 10px;
+		font-size: 24px;
+	}
+
+	#scoreTitles h3
+	{
+		margin-top: 5px;
+		font-size: 20px;
+	}
+	
+	/*## Main Menu ##*/
+	#MainMenu
+	{
+		margin-top: 120px;
+	}
+	
+	#MainMenu h1 {
+		font-size: 57px;
+	}
+
+	#MainMenu h2 {
+		margin-top: 200px;
+		font-size: 20px;
+	}
+	
+	#version {
+		top: -140px; /*The Opposite of #MainMenu margin-top*/
+	}
+}
+
+/*### Smartphones and Tablets ###*/
+@media (max-width:1024px) 
+{
+	#cont
+	{
+		height:100%;
+	}
+
+	#time-score
+	{
+		position: fixed;
+	}
+	/*## Score Titles ##*/
+	#scoreTitles
+	{
+		margin-top: 2.2em;
+	}
+
+	#scoreTitles h1 
+	{
+		font-size: 3.5em;
+	}
+
+	#scoreTitles h2
+	{
+		margin-top: 0.1em;
+		font-size: 1.3125em;
+	}
+
+	#scoreTitles h3
+	{
+		margin-top: 0.05em;
+		font-size: 1.09375em;
+	}
+	
+	/*## Main Menu ##*/
+	#MainMenu
+	{
+		margin-top: 2em;
+	}
+	#MainMenu h1 
+	{
+		font-size: 3.2em;
+	}
+
+	#MainMenu h2 
+	{
+		margin-top: 10em;
+		font-size: 1.3em;
+	}
+	
+	#version {
+		bottom: 50px; /*The Opposite of #MainMenu margin-top*/
+	}
+}
+/*### Everybody ###*/
+body {
+margin: 0;
+background-color: rgb(245,245,245);
+}
+
+#cnvs {
+padding-left: 0;
+padding-right: 0;
+margin-left: auto;
+margin-right: auto;
+display: block;
+position: absolute;
+}
+
+#cont {
+position: absolute;
+}
+
+#time-score
+{
+font-family: Segoe UI;
+font-weight: lighter;
+right:20px;
+top: 10px;
+font-size: 24px;
+}
+
+.Titles {
+position: relative;
+text-align:center;
+}
+
+#realGame {
+filter: blur(15px);
+-ms-Filter: blur(15px);
+-o-Filter: blur(15px);
+-webkit-Filter: blur(15px);
+-moz-Filter: blur(15px);
+}
+
+#version
+{
+	position:relative;
+	left:2px;
+}
+
+/*## Score Titles ##*/
+#scoreTitles
+{
+	display: none;
+}
+
+#scoreTitles h1 {
+color: rgb(4,72,174);
+cursor: context-menu;
+}
+
+#scoreTitles h2{
+color: rgb(5,43,139);
+}
+
+/*## Main Menu ##*/
+#MainMenu {
+height: 100%;
+}
+
+#MainMenu h1 {
+color: rgb(4,72,174);
+}
+
+#MainMenu h2 {
+color: rgb(15,15,15);
+}
